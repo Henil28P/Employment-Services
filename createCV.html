@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<!-- CENSUS ERROR REPORT survey -->
+
+<head>
+  <link rel="stylesheet" href="iptweb.css">
+  <title>...</title>
+  <link rel="shortcut icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- ADD CSS STYLES TO STYLE THE NAV BAR -->
+
+</head>
+
+<body style="background-color: lightskyblue">
+
+  <h1
+    class="main_head" width="50%" style="background-color: #68f868; font-size: 60px; font-style: italic; color: black; text-align: center; padding: 20px; text-decoration: none; text-shadow: 2px 2px 4px orangered"
+    href="index.html">
+
+    <a class="home" href="index.html" style="text-decoration: none">
+
+      <!-- Logos beside Main Heading-->
+      <img src="emp_bag_anim(2).gif" alt="logo" width="105px" height="100px"
+      style="float: left; transform: translate(100%,-13%); animation: 3s linear 1s slidein;">All-In-One Employment Services
+  <img class="flipped" src="emp_bag_anim(2).gif" width="105px" height="100px" style="transform: translate(-90%,-13%); float: right;">
+
+    </a>
+
+  </h1>
+
+  <!-- Navigation Bar code -->
+  <nav>
+    <img src="logo.png" alt="logo" width="60px" height="60px" style="float: left; transform: translateX(-185%);">
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="info.html">Information</a></li>
+      <li><a href="applyTFN.html">Apply TFN</a></li>
+      <li><a href="createCV.html">Create CV</a></li>
+      <li><a href="superFund.html">Super Fund</a></li>
+      <li><a href="webcredits.html">Web Credits</a></li>
+    </ul>
+
+  </nav>
+
+  <style>
+    nav {
+      width: 100%;
+      height: 58px;
+      background-color: rgb(48, 167, 241);
+      padding-left: 1px;
+
+    }
+
+    /* #55d6aa */
+
+    nav a:hover {
+      background-color: rgb(119, 217, 255);
+      display: block;
+    }
+
+
+    nav a::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: black;
+      position: relative;
+      top: 6.5px;
+      width: 0%;
+      transition: all ease-in-out 190ms;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+
+    ul {
+      margin-left: 60px;
+      transform: translateX(-8%);
+    }
+
+    ul li {
+      list-style: none;
+      display: inline-block;
+      float: none;
+      line-height: 53px;
+
+    }
+
+    ul li a {
+      display: block;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: arial;
+      color: #1e1e1e;
+      padding: 0 20px;
+    }
+
+    ul li a:hover {
+      color: red;
+    }
+  </style>
+
+  <br>
+
+
+  <h1> Welcome to the CV (Curriculum Vitae) creation page</h1>
+  <p> Please fill in the following details to help us create your CV </p>
+
+  <br>
+  <hr style="border: 2.5px solid red">
+
+  <br>
+
+  <form action="superFund.html" method="GET" enctype="multipart/form-data" style="font-size: 22px; padding: 20px  ">
+    <h4>Fill in the following details: </h4>
+    <div>
+      <label for="name1">First Name: </label>
+      <input type="text" name="first_name" id="name1" placeholder="Enter your first name" required>
+
+      <label for="name2" style="padding-left: 40px;">Last Name: </label>
+      <input type="text" name="last_name" id="name2" placeholder="Enter your last name" required>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="e-mail">E-mail Address: </label>
+      <input type="email" name="e-mail_address" id="e-mail" placeholder="Enter your e-mail address" required>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="address">Physical Address: </label>
+      <input type="text" name="home_address" id="address" placeholder="Enter your home address" required>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="phone">Mobile Phone Number: </label>
+      <input type="number" name="phone_no." id="phone" placeholder="Enter your mobile number" maxlength="12" required>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="intelligence">Describe your education level (Please write more than 80 words <br>as we need to know more
+        about you):</label><br>
+      <textarea name="education_level" id="intelligence" rows="10" cols="60" style="resize: none"
+        placeholder="Please describe your education level in this box"></textarea>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <img src="https://d4y70tum9c2ak.cloudfront.net/contentImage/CfshGU8P2FE1Ns8e_-2BxMtytXwveZJqCe07BWDVAzE/resized.jpg" class="example_CV">
+
+      <style>
+        .example_CV {
+          float: right;
+          width: 600px;
+          height: 600px;
+          transform: translateY(-50%);
+        }
+      </style>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="key_interests" style="color: red">Enter your key interests below: </label><br>
+      <textarea name="passions" style="resize: none; border-radius: 2.5px inset red" id="key_interests" rows="12"
+        cols="60" placeholder="Your key interests ..."></textarea>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- For First work placement form -->
+    <div class="container_work" style="float: left">
+      <style>
+        .container_work {
+          width: 500px;
+          height: 390px;
+          border: 2px solid red;
+          border-radius: 9px;
+          padding-top: 40px;
+          padding-right: 100px;
+          padding-bottom: 40px;
+          padding-left: 40px;
+          margin-bottom: 20px;
+        }
+      </style>
+
+      <h2>Work Experience Employer 1 (First Work Placement) </h2>
+
+      <div>
+        <label for="first_name_R2" style="color: red">Organisation Name: </label>
+        <input name="first_R2" type="text" style="border-radius: 2.5px inset green" id="first_name_R2"
+          placeholder="Enter the first name of your referee 2"> <br>
+      </div>
+
+      <div>
+        <label for="last_name_R2" style="color: red">Location: </label>
+        <input name="last_R2" type="text" style="border-radius: 2.5px inset green" id="last_name_R2"
+          placeholder="Enter the last name of your referee 2"> <br>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="job_title_R2" style="color: red">Job Title: </label>
+        <input name="job_type_R2" type="text" style="border-radius: 2.5px inset green" id="job_title_R2"
+          placeholder="Enter the job title of your referee 2"> <br>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="organisation_R2" style="color: red">Duties: </label>
+        <input name="org._R2" type="text" style="border-radius: 2.5px inset green" id="organisation_R2"
+          placeholder="Enter the organisation of referee 2"> <br>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="email" style="color: red">Duration: </label>
+        <input name="email_address_R2" type="text" id="email" style="border-radius: 2.5px inset green"
+          placeholder="Enter email address of referee 2"> <br>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="phone_no._R2" style="color: red">Phone Number: </label>
+        <input name="phone_no._for_R2" type="phone" id="phone_no._R2" style="border-radius: 2.5px inset green"
+          placeholder="Enter the phone number of referee 2">
+      </div>
+
+    </div>
+
+    <br>
+
+    <!-- For Second Work Placement form -->
+
+    <div class="container_work2" style="float: right">
+      <style>
+        .container_work2 {
+          width: 500px;
+          height: 390px;
+          border: 2px solid red;
+          border-radius: 9px;
+          padding-top: 40px;
+          padding-right: 100px;
+          padding-bottom: 25px;
+          padding-left: 40px;
+          margin-bottom: 20px;
+          transform: translateY(-45%);
+        }
+      </style>
+
+      <h2>Work Experience Employer 2 (Second Work Placement): </h2>
+
+      <div>
+        <label for="first_name_R2" style="color: red">Organisation Name: </label>
+        <input name="first_R2" type="text" style="border-radius: 2.5px inset green" id="first_name_R2"
+          placeholder="Enter the first name of your referee 2"> <br>
+      </div>
+
+      <div>
+        <label for="last_name_R2" style="color: red">Location: </label>
+        <input name="last_R2" type="text" style="border-radius: 2.5px inset green" id="last_name_R2"
+          placeholder="Enter the last name of your referee 2"> <br>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="job_title_R2" style="color: red">Job title: </label>
+        <input name="job_type_R2" type="text" style="border-radius: 2.5px inset green" id="job_title_R2"
+          placeholder="Enter the job title of your referee 2"> <br>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="organisation_R2" style="color: red">Duties: </label>
+        <input name="org._R2" type="text" style="border-radius: 2.5px inset green" id="organisation_R2"
+          placeholder="Enter the organisation of referee 2"> <br>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="email" style="color: red">Duration: </label>
+        <input name="email_address_R2" type="email" id="email" style="border-radius: 2.5px inset green"
+          placeholder="Enter email address of referee 2"> <br>
+      </div>
+
+      <br>
+
+    </div>
+
+    <br>
+
+    <!-- For Work Experience 1 and 2 -->
+
+    <div class="container1" style="float: left">
+      <style>
+        .container1 {
+          width: 450px;
+          height: 390px;
+          border: 2px solid red;
+          border-radius: 9px;
+          padding: 30px;
+        }
+      </style>
+
+      <h2 style="color: black; font-style: italic">Referee 1: </h2>
+
+      <div>
+        <label for="first_name_R1" style="color: red">First Name: </label>
+        <input name="first_R1" type="text" style="border-radius: 2.5px inset green" id="first_name_R1"
+          placeholder="Enter the first name of your referee 1">
+      </div>
+
+      <div>
+        <label for="last_name_R1" style="color: red">Last Name: </label>
+        <input name="last_R1" type="text" style="border-radius: 2.5px inset green" id="last_name_R1"
+          placeholder="Enter the last name of your referee 1">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="job_title_R1" style="color: red">Job title: </label>
+        <input name="job_type_R1" type="text" style="border-radius: 2.5px inset green" id="job_title_R1"
+          placeholder="Enter the job title of your referee 1">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="organisation_R1" style="color: red">Organisation: </label>
+        <input name="org._R1" type="text" style="border-radius: 2.5px inset green" id="organisation_R1"
+          placeholder="Enter the organisation of referee 1">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="email" style="color: red">Email Address: </label>
+        <input name="email_address_R1" type="email" style="border-radius: 2.5px inset green" id="email"
+          placeholder="Email address of referee 1">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="phone_no._R1" style="color: red">Phone Number: </label>
+        <input name="phone_no._for_R1" type="phone" style="border-radius: 2.5px inset green" id="phone_no."
+          placeholder="Phone number of referee 1">
+      </div>
+
+    </div>
+
+    <div class="container2" style="float: right">
+      <style>
+        .container2 {
+          width: 500px;
+          height: 390px;
+          border: 2px solid red;
+          border-radius: 9px;
+          padding-top: 40px;
+          padding-right: 100px;
+          padding-bottom: 40px;
+          padding-left: 40px;
+        }
+      </style>
+
+      <h2>Referee 2: </h2>
+
+      <div>
+        <label for="first_name_R2" style="color: red">First Name: </label>
+        <input name="first_R2" type="text" style="border-radius: 2.5px inset green" id="first_name_R2"
+          placeholder="Enter the first name of your referee 2">
+      </div>
+
+      <div>
+        <label for="last_name_R2" style="color: red">Last Name: </label>
+        <input name="last_R2" type="text" style="border-radius: 2.5px inset green" id="last_name_R2"
+          placeholder="Enter the last name of your referee 2">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="job_title_R2" style="color: red">Job title: </label>
+        <input name="job_type_R2" type="text" style="border-radius: 2.5px inset green" id="job_title_R2"
+          placeholder="Enter the job title of your referee 2">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="organisation_R2" style="color: red">Organisation: </label>
+        <input name="org._R2" type="text" style="border-radius: 2.5px inset green" id="organisation_R2"
+          placeholder="Enter the organisation of referee 2">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="email" style="color: red">Email Address: </label>
+        <input name="email_address_R2" type="email" id="email" style="border-radius: 2.5px inset green"
+          placeholder="Enter email address of referee 2">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="phone_no._R2" style="color: red">Phone Number: </label>
+        <input name="phone_no._for_R2" type="phone" id="phone_no._R2" style="border-radius: 2.5px inset green"
+          placeholder="Enter the phone number of referee 2">
+      </div>
+
+    </div>
+
+    <br>
+
+
+    <br>
+
+    <!-- Submit and reset buttons -->
+    <div>
+      <button type="reset" class="reset_form">Reset</button>
+      <button type="submit" class="submit_form">Submit</button>
+    </div>
+
+    <!-- Style for Submit and Reset buttons -->
+    <style>
+      .reset_form {
+        border: 2px inset rgb(0, 238, 255);
+        border-radius: 10px;
+        background-color: rgb(0, 102, 255);
+        color: white;
+        padding: 18px 30px;
+        transform: translate(0%,780%);
+        font-size: 22px;
+        transform: translateY(550%);
+      }
+
+      .reset_form:hover {
+        background-color: rgb(0, 162, 255);
+        cursor: pointer;
+        color: red;
+        font-size: 22px;
+      }
+
+      .submit_form {
+        border: 2px inset rgb(0, 238, 255);
+        border-radius: 10px;
+        background-color: rgb(0, 102, 255);
+        color: white;
+        padding: 18px 30px;
+        transform: translate(0%,780%);
+        font-size: 22px;
+      }
+
+      .submit_form:hover {
+        background-color: rgb(0, 162, 255);
+        cursor: pointer;
+        font-size: 22px;
+        color: red;
+      }
+    </style>
+
+  </form>
+
+
+
+</body>
+
+</html>
