@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<!-- CENSUS TESTING REPORT -->
+
+<head>
+  <link rel="stylesheet" href="iptweb.css">
+  <title></title>
+  <link rel="shortcut icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<!-- ADD CSS STYLES TO STYLE THE NAV BAR -->
+
+<body style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTateT_do0l93RAwGeUJdkQIQPhHBWx9kFGXQ&usqp=CAU'); background-size: cover">
+
+  <h1
+    class="main_head" width="50%" style="background-color: #68abf8; font-size: 60px; font-style: italic; color: black; text-align: center; padding: 20px; text-decoration: none; text-shadow: 2px 2px 4px orangered"
+    href="index.html">
+
+    <a class="home" href="index.html" style="text-decoration: none">
+
+      <!-- Logos beside Main Heading-->
+      <img src="emp_bag_anim(2).gif" alt="logo" width="105px" height="100px"
+      style="float: left; transform: translate(100%,-13%); animation: 3s linear 1s slidein;">All-In-One Employment Services
+  <img class="flipped" src="emp_bag_anim(2).gif" width="105px" height="100px" style="transform: translate(-90%,-13%); float: right;">
+
+    </a>
+
+  </h1>
+
+  <!-- Navigation Bar code -->
+  <nav>
+    <img src="logo.png" alt="logo" width="60px" height="60px" style="float: left; transform: translateX(-185%);">
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="info.html">Information</a></li>
+      <li><a href="applyTFN.html">Apply TFN</a></li>
+      <li><a href="createCV.html">Create CV</a></li>
+      <li><a href="superFund.html">Super Fund</a></li>
+      <li><a href="webcredits.html">Web Credits</a></li>
+    </ul>
+
+  </nav>
+
+  <style>
+    nav {
+      width: 100%;
+      height: 58px;
+      background-color: rgb(99, 248, 86);
+      padding-left: 1px;
+
+    }
+
+    /* #55d6aa */
+
+    nav a:hover {
+      background-color: rgb(177, 255, 184);
+      display: block;
+    }
+
+
+    nav a::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: black;
+      position: relative;
+      top: 6.5px;
+      width: 0%;
+      transition: all ease-in-out 190ms;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+
+    ul {
+      margin-left: 60px;
+      transform: translateX(-8%);
+    }
+
+    ul li {
+      list-style: none;
+      display: inline-block;
+      float: none;
+      line-height: 53px;
+
+    }
+
+    ul li a {
+      display: block;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: arial;
+      color: #1e1e1e;
+      padding: 0 20px;
+    }
+
+    ul li a:hover {
+      color: red;
+    }
+  </style>
+
+  <br>
+  <hr>
+  <br>
+
+
+  <h1>Superannuation Standard Choice Form</h1>
+  <h3 style="color: red">Section A: <i><b>Employee to complete</b></i></h3>
+
+  <br>
+
+  <form action="page6.html" method="GET" enctype="multipart/form-data" class="container"
+    style="font-size: 35px; padding: 10px 15px 25px 15px">
+    <h4>Fill in the following details</h4>
+
+    <div>
+      <label for="radio"></label>
+      <input name="radio_button" type="radio" id="radio">
+    </div>
+
+    <!-- 2/ 3 More Questions according to the link provided -->
+
+    <h2 style="color: black; font-weight: bold;">2. Your details</h2>
+
+    <div>
+      <label for="name" style="color: red">Name: </label>
+      <input name="first_name" type="text" id="text" style="border: 3.5px solid red">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="employee_no." style="color: red">Employee identification number (if applicable): </label>
+      <input name="id_no." type="text" id="employee_no." style="border: 3.5px solid red" maxlength="16">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="TFN" style="color: red">Tax File Number (TFN): </label>
+      <input for="TFN" type="text" id="TFN" style="border: 3.5px solid red">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+
+    <h2 style="color: black; font-weight: bold">3. Nominating your APRA fund or RSA: </h2>
+    <div>
+      <label for="fund_ABN">Fund ABN: </label>
+      <input name="fund" type="text" id="fund_ABN" style="border: 3.5px inset red" maxlength="14">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="fund_name">Fund Name: </label>
+      <input name="fund" type="text" id="fund_name" style="border: 3.5px inset red" maxlength="14">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3 style="color: black"><strong>Fund Address: </strong></h3>
+
+    <div class="div1">
+      <label for="suburb" style="color: red">Suburb/ Town</label>
+      <input name="fund_suburb" type="text" id="suburb" style="border: 3.5px inset red" maxlength="40">
+    </div>
+
+    <div class="div2">
+      <label for="state" style="color: red">State/ Territory</label>
+      <input name="fund_state" type="text" id="state" size="1" maxlength="1">
+      <input name="fund_state" type="text" id="state" size="1" maxlength="1">
+      <input name="fund_state" type="text" id="state" size="1" maxlength="1">
+    </div>
+
+    <div class="div3">
+      <label for="postcode" style="color: red">Postcode </label>
+      <input name="fund_postcode" type="text" id="postcode" size="1" maxlength="1">
+      <input name="fund_postcode" type="text" id="postcode" size="1" maxlength="1">
+      <input name="fund_postcode" type="text" id="postcode" size="1" maxlength="1">
+      <input name="fund_postcode" type="text" id="postcode" size="1" maxlength="1">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="phone" style="color: red">Fund Phone: </label>
+      <input name="fund_phone" type="tel" id="phone" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="fund_phone" type="tel" id="phone" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="fund_phone" type="tel" id="phone" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="fund_phone" type="tel" id="phone" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="fund_phone" type="tel" id="phone" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="fund_phone" type="tel" id="phone" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="fund_phone" type="tel" id="phone" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="fund_phone" type="tel" id="phone" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="fund_phone" type="tel" id="phone" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="fund_phone" type="tel" id="phone" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="USI" style="color: red">Unique Superannuation Identifier (USI): </label>
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+      <input name="usi" type="text" id="USI" style="border-radius: 1.5px inset red" size="1" maxlength="1">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="account" style="color: red">Your account name (if applicable): </label><br>
+      <input name="account_name" type="text" id="account" style="border-radius: 3.5px inset red">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="member" style="color: red">Your member number (if applicable): </label><br>
+      <input name="member_no" type="text" id="member" style="border-radius: 3.5px inset red" maxlength="16">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h2 style="color: black; font-style: italic">Nominating your self-managed super fund (SMSF): </h2>
+    <div>
+      <label for="ABN" style="color: red">Fund ABN: </label>
+      <input name="fund_ABN" type="text" id="ABN" style="border-radius: 3.5px inset red">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="f_name">Fund Name: </label>
+      <input type="text" name="f_name" id="f_name">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="f_address">Fund Address: </label>
+      <input type="text" name="f_address" id="f_address" placeholder="e.g street name, unit/ house number, etc.">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="suburb">Suburb/ Town: </label>
+      <input type="text" name="suburb" id="suburb" placeholder="e.g Parramatta, Wentworthville, Quakers Hill, etc.">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="state">State/ Territory (ONLY 3 CHARACTERS): </label>
+      <input type="text" name="state" id="state" size="1" maxlength="1">
+      <input type="text" name="state" id="state" size="1" maxlength="1">
+      <input type="text" name="state" id="state" size="1" maxlength="1">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="postcode">Postcode: </label>
+      <input type="text" name="postcode" id="postcode" size="2" maxlength="1">
+      <input type="text" name="postcode" id="postcode" size="2" maxlength="1">
+      <input type="text" name="postcode" id="postcode" size="2" maxlength="1">
+      <input type="text" name="postcode" id="postcode" size="2" maxlength="1">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="fund_phone">Fund phone: </label>
+      <input type="tel" name="fund_phone" id="fund_phone" size="1" maxlength="1">
+      <input type="tel" name="fund_phone" id="fund_phone" size="1" maxlength="1">
+      <input type="tel" name="fund_phone" id="fund_phone" size="1" maxlength="1">
+      <input type="tel" name="fund_phone" id="fund_phone" size="1" maxlength="1">
+      <input type="tel" name="fund_phone" id="fund_phone" size="1" maxlength="1">
+      <input type="tel" name="fund_phone" id="fund_phone" size="1" maxlength="1">
+      <input type="tel" name="fund_phone" id="fund_phone" size="1" maxlength="1">
+      <input type="tel" name="fund_phone" id="fund_phone" size="1" maxlength="1">
+      <input type="tel" name="fund_phone" id="fund_phone" size="1" maxlength="1">
+      <input type="tel" name="fund_phone" id="fund_phone" size="1" maxlength="1">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="ESA">Fund electronic service address (ESA): </label>
+      <input type="text" name="ESA" id="ESA">
+    </div>
+
+    <br>
+
+    <h4 style="color: maroon">Fund bank account: </h4> <br>
+
+    <div style="padding-right: 20px">
+      <label for="bsb_code">BSB Code (please include all six numbers): </label>
+      <input type="text" name="bsb_code" id="bsb_code" size="1" maxlength="1">
+      <input type="text" name="bsb_code" id="bsb_code" size="1" maxlength="1">
+      <input type="text" name="bsb_code" id="bsb_code" size="1" maxlength="1">
+      <input type="text" name="bsb_code" id="bsb_code" size="1" maxlength="1">
+      <input type="text" name="bsb_code" id="bsb_code" size="1" maxlength="1">
+      <input type="text" name="bsb_code" id="bsb_code" size="1" maxlength="1">
+    </div>
+
+    <div style="padding-left: 20px">
+      <label for="account_num">Account number: </label>
+      <input type="text" name="account_num" id="account_num" size="1" maxlength="1">
+      <input type="text" name="account_num" id="account_num" size="1" maxlength="1">
+      <input type="text" name="account_num" id="account_num" size="1" maxlength="1">
+      <input type="text" name="account_num" id="account_num" size="1" maxlength="1">
+      <input type="text" name="account_num" id="account_num" size="1" maxlength="1">
+      <input type="text" name="account_num" id="account_num" size="1" maxlength="1">
+      <input type="text" name="account_num" id="account_num" size="1" maxlength="1">
+      <input type="text" name="account_num" id="account_num" size="1" maxlength="1">
+      <input type="text" name="account_num" id="account_num" size="1" maxlength="1">
+      <input type="text" name="account_num" id="account_num" size="1" maxlength="1">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Not sure about part 4 (Nominating your self-managed super fund (SMSF), but look through it and decide or ask teacher -->
+
+  </form>
+
+  <style>
+    #postcode,
+    #state {
+      height: 30px;
+      border: 1.5px inset red;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    /* #state{
+        height: 30px;
+        border: 1.5px inset red;
+        border-radius: 8px;
+        text-align: center;
+      } */
+  </style>
+
+  <!-- Following code for 'footer'-->
+  <footer style="background-color: grey; color: white; padding: 4%">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row" style="font-size: 18px; font-family: sans-serif">
+
+                <!-- Column 1 -->
+                <span class="column1">
+                    <h3>Get connected</h3>
+                    <p style="line-height: 25px; color: lightgrey">We are just a message away to get connected</p>
+                    <br>
+                    <label for="connect">E-mail</label>
+                    <br>
+                    <input name="connect" type="email" id="connect" placeholder="Your email"> <br>
+
+
+                    <style>
+                        #connect {
+                            background-color: white;
+                            padding: 5px;
+                            width: 20%;
+                            float: left;
+                            padding-left: 20px;
+                            transition: transform .2s;
+                        }
+
+                        #connect:hover {
+                            box-shadow: 4px 4px 8px greenyellow;
+                            transform: scale(1.2);
+                        }
+                    </style>
+                </span>
+
+                <br>
+
+
+                <div class="social_media" style="margin-top: 25px;">
+                    <h2>Head Office</h2>
+                    <i class="fas fa-map-marker-alt" style="transform: translateX(-10%)">Address: <p class="addr" style="transform: translateX(20%)">3 Adden Street, Quakers Hill, NSW 2762</p></i><br>
+                    <i class="fa fa-phone" style="transform: translateX(-325%)"><p class="contact" style="transform: translateX(125%)">0473 832 705</p></i><br>
+                    <i class="fa fa-envelope-o" style="transform: translateX(11%)">             <p class="mail" style="transform: translateX(-10%)"></p>young_employment_services@gmail.com</p></i><br>
+                    <ul type="none"></ul>
+                </div>
+
+                <br>
+
+                <style>
+                    .addr {
+                        float: left;
+                        font-size: 20px;
+                        font-family: arial;
+                    }
+
+                    .contact{
+                        float: left;
+                        font-size: 20px;
+                        font-family: arial;
+                        
+                    }
+
+                    .mail {
+                        float: left;
+                        font-family: arial;
+                        font-size: 20px;
+                        
+                    }
+                </style>
+
+                <!-- Another column (2) -->
+
+                <!-- IGNORE THIS -->
+                <!-- <h2 style="float: right" class="h">Physically contact us</h2>
+                    <ul style="text-decoration: none" class="links_none">
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Open days</a></li>
+                        <li><a href="#">Support us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+
+                    <style>
+                        .links_none {
+                            float: right;
+                        }
+
+                        .links_none:hover{
+                            color: yellowgreen;
+                        }
+
+                        .links_none li {
+                            display: block;
+                            padding: 10px;
+                            font-size: 30px;
+                            line-height: 24px; 
+                        }
+
+                        .h {
+                            transform: translate(-150%, -200%);
+                        }
+
+                    
+                    </style>
+                </div> -->
+
+                <br>
+
+                <!-- Another column (3) -->
+                <span class="socials" style="transform: translateY(-120%)">
+                    <h2>Follow us on </h2>
+                    <p>You can follow us on our social media profiles in order to keep updated:</p>
+
+                    <a href="https://www.linkedin.com/login" id="media" class="fa fa-linkedin"></a>
+                    <a href="https://twitter.com/login?lang=en" id="media" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/" id="media" class="fa fa-instagram"></a>
+                    <a href="https://www.facebook.com/" id="media" class="fa fa-facebook"></a>
+                    
+
+                    <style>
+                        .socials {
+                            float: right;
+                            width: 500px;
+                            height: 50px;
+                            border: none;
+                            border-radius: 9px;
+                            padding-top: 20px;
+                            padding-right: 100px;
+                            padding-bottom: 0px;
+                            padding-left: 40px;
+                            transform: translate(0%, -220%);
+                        }
+
+                        #media {
+                            font-size: 32px;
+                            /* float: right;*/
+                            padding-right: 15px;
+                            text-decoration: none;
+                            display: inline-block;
+                        }
+
+                        #media:hover {
+                            color: yellow;
+                        }
+                    </style>
+                    <!-- <i class="fa fa-envelope-o" aria-hidden="false"></i> -->
+
+                    <style>
+
+                        /* .fas {
+                            font-size: 22px;
+                            padding-right: 15px;
+                            text-decoration: none;
+                            display: inline-block;
+                        }
+
+                        /* 
+                        .fa:hover {
+                            color: yellow;
+                            background-color: none;
+                        }
+
+                        .far:hover {
+                            color: yellow;
+                            background-color: none;
+                        }
+
+                        .fas:hover {
+                            color: yellow;
+                            background-color: none;
+                        } */
+                    </style>
+                </span>
+
+                <br>
+
+                <br>
+
+                <p class="copyright" style="font-size: 18px; color: black;">Copyright &copy; 2020 All-In-One
+                    Employment Services Pty Ltd. All rights reserved</p>
+
+                <style>
+                    .copyright {
+                        margin-left: 30px;
+                        text-align: center;
+                    }
+                </style>
+                <!-- Last column -->
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
