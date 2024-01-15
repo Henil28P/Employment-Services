@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="trial2.css">
+  <script language="javascript" type="text/javascript" src="script.js"></script>
+  <title>Document</title>
+
+</head>
+<div class="context">
+
+
+ </div>
+
+ <h1 width="50%"
+        style="font-size: 75px; text-align: center; text-decoration: none; padding: 15px; text-shadow: 3px 3px 6px tomato; 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, monospace; font-style: italic; font-weight: bold">
+        <a style="text-decoration: none" href="index.html">Welcome to All-In-One Employment Services</a></h1>
+
+  <nav>
+    <img src="logo.png" alt="logo" width="60px" height="60px" style="float: left;">
+
+    <h4 style="float: right; font-size: 35px; text-shadow: red; padding-right: 30px; padding-top: 10px"><strong><i>We
+          are for you</i></strong></h4>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="info.html">Information</a></li>
+      <li><a href="applyTFN.html">Apply TFN</a></li>
+      <li><a href="createCV.html">Create CV</a></li>
+      <li><a href="superFund.html">Super Fund</a></li>
+      <li><a href="webcredits.html">Web Credits</a></li>
+    </ul>
+
+  </nav>
+
+  <style>
+    nav {
+      width: 100%;
+      height: 58px;
+      background-color: lightgreen;
+      padding-left: 1px;
+
+    }
+
+    /* #55d6aa */
+
+    nav a:hover {
+      background-color: lightgrey;
+      display: block;
+    }
+
+
+    nav a::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: black;
+      position: relative;
+      top: 6.5px;
+      width: 0%;
+      transition: all ease-in-out 190ms;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+
+    ul {
+      margin-left: 60px;
+    }
+
+    ul li {
+      list-style: none;
+      display: inline-block;
+      float: none;
+      line-height: 53px;
+
+    }
+
+    ul li a {
+      display: block;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: arial;
+      color: #1e1e1e;
+      padding: 0 20px;
+    }
+
+    ul li a:hover {
+      color: red;
+    }
+  </style>
+
+<body style="background-image: url('https://image.freepik.com/free-photo/abstract-blur-light-gradient-purple-green-soft-pastel-color-wallpaper-background_7636-136.jpg'); background-size: cover;"></body>
+
+<div class="container">
+
+  <p style="font-size: 28px"><strong><i><b>When completing this form, read the following instructions: </b></i></strong>
+  </p>
+  <ul style="list-style-type: square">
+    <li>Answer all the questions, otherwise, we may need to contact you for furthur information.</li> <br>
+    <li>Please fill in all the required fields appropriately as we will need a clear information about you.</li> <br>
+    <li>Carefully and closely read the labels for each input field.</li>
+  </ul>
+
+  <hr style="border: 4px green dashed">
+
+  <br>
+
+  <!-- Applying for TFN 'form' begins -->
+
+    <form action="page4.html" method="GET" enctype="multipart/form-data"
+    style="font-size: 25px; font-family:'Times New Roman', Times, serif; padding: 10px 10px 20px 15px">
+    <p
+      style="text-align: center; font-style: italic; text-decoration: underline; font-weight: bold; text-shadow: black">
+      Please fill in the following details to apply for your TFN (Tax File Number):</p>
+
+    <br>
+
+    <div>
+      <p
+        style="font-size: 40px; font-style: italic; color: red; text-decoration: underline; border-radius: 10px; border: 3.5px solid maroon; padding: 10px 50px 20px 15px;">
+        <strong>Section A: Applicant Information</strong></p> <br>
+      <p> The answer to this questions will help us establish whether you are already on our records or not.</p>
+
+      <br>
+      <hr style="border: yellow">
+
+      <div style="background-image: Al"></div>
+
+      <br>
+
+      <!-- Now the questions start from here (Code line 85) -->
+      <div style="border-radius: 10px; border: 2px solid blue">
+        <p style="color: red">1. Have you ever: <b>(Select any one option from below)</b></p>
+        <ul style="list-style-type:square">
+          <li>Had a TFN (Tax File Number)</li> <br>
+          <li>Applied for a TFN before</li> <br>
+          <li>Lodged a tax return in Australia</li> <br>
+        </ul>
+
+        <br>
+
+        <div>
+          <label for="no">No</label>
+          <input type="radio" name="boolean" id="no" value="no">
+        </div>
+        <div>
+          <label for="yes">Yes</label>
+          <input type="radio" name="boolean" id="yes" value="yes">
+        </div>
+
+      </div>
+
+      <br>
+
+      <hr style="border: 3px solid limegreen; width: 65%">
+
+      <br>
+
+      <div>
+        <p><strong>2. If you know the details of when you last dealt with us, provide them below: </strong></p>
+
+        <br>
+
+        <div>
+          <h2 style="color: maroon">When did you last deal with us? </h2> <br>
+
+          <div>
+            <label for="year" style="color: red">Year</label>
+            <input name="text" type="text" id="year" style="border-radius: 10px; border: 2px solid red" maxlength="4">
+          </div> <br>
+
+          <div>
+            <label for="details" style="color: red">Details (e.g. Tax return)</label>
+            <input name="#details" type="text" id="details" maxlength="17">
+          </div>
+
+        </div>
+
+        <br>
+
+
+        <div>
+          <h3 style="color: maroon">Were your personal details same as they are now?</h3> <br>
+
+          <div>
+            <label for="no">No</label>
+            <input type="radio" name="#radio" id="no" value="no"> Provide your details as they were when you last dealt
+            with us.
+          </div>
+
+          <br>
+
+          <div>
+            <label for="yes">Yes</label>
+            <input type="radio" name="#radio" id="yes" value="yes"> Go to question 3.
+          </div>
+
+        </div>
+
+        <br>
+
+
+        <div>
+          <label for="family_name">Family name at that time</label>
+        </div>
+
+        <br> <!-- ASK TEACHER IF THIS IS IMPORTANT OR NOT -->
+
+      </div>
+
+      <hr>
+
+      <div>
+        <h2><strong>3. Why do you need TFN?</strong></h2>
+        <p>Select one reason only that best describes why you are applying for a TFN: </p>
+      </div>
+
+      <br>
+
+      <div>
+
+        <div>
+          <label for="reason1">To give to your employer or prayer</label>
+        </div>
+
+        <!-- ALSO, ASK AND CONFIRM IF I NEED THIS PART AS WELL (REASONS WHY USER IS APPLYING FOR A TFN) -->
+
+      </div>
+
+      <br>
+
+      <hr style="border: 3px solid green">
+
+      <br>
+
+      <div>
+        <h2><strong>4. What is your full name? </strong></h2> <!-- MAYBE PUT IS AS A DROP-DOWN BOX -->
+
+        <div>
+          <label for="title1">Mr</label>
+          <input name="#title" type="radio" id="title1" value="Mr">
+        </div>
+
+        <div>
+          <label for="title2">Miss</label>
+          <input name="#title" type="radio" id="title2" value="Miss">
+        </div>
+
+        <div>
+          <label for="title3">Ms</label>
+          <input name="#title" type="radio" id="title3" value="Ms">
+        </div>
+
+        <div>
+          <label for="other">Other: </label>
+          <input name="#title" type="text" id="other" maxlength="10">
+        </div>
+
+        <br>
+
+
+        <br>
+
+        <div>
+          <label for="family">Family Name: </label>
+          <input name="#family" type="text" id="family" style="border: 1.5px inset red; border-radius: 9px">
+        </div>
+
+        <div>
+          <label for="first">First Name: </label>
+          <input name="#first" type="text" id="family" style="border: 1.5px inset red; border-radius: 9px">
+        </div>
+
+        <div>
+          <label for="other">Other given names: </label>
+          <input name="#other" type="text" id="other" style="border: 1.5px inset red; border-radius: 9px">
+        </div>
+
+      </div>
+
+      <br>
+      <hr>
+
+      <div>
+        <h2><strong>5. Have you ever had another name?</strong></h2>
+
+        <div>
+          <label for="no">No </label>
+          <input name="#boolean" type="radio" id="no" value="no">
+        </div> <br>
+
+        <div>
+          <label for="yes">Yes</label>
+          <input name="#boolean" type="radio" id="yes" value="yes">
+        </div>
+
+        <br>
+
+
+        <div>
+          <label for="nick_name">If yes, what was the type of name?</label>
+          <select name="nick_name" id="nick_name">
+            <option value="The name on your birth certificate">The name on your birth certificate</option> <br>
+            <option label="A shortened version of your name" value="A shortened version of your name">Helllllloooooo</option> <br>
+            <option label="An assumed name (known as)" value="An assumed name (known as)">Heeeeyyyyyyy</option> <br>
+            <option label="Your skin name" value="Your skin name">Ayyyyooooooo</option> <br>
+          </select>
+        </div>
+
+        <br>
+
+        <div>
+          <!-- KEEP THIS FOR ANOTHER NAME OPTIONS -->
+        </div>
+
+        <br>
+
+      </div>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <div>
+        <h2><strong>6. What is your sex? </strong></h2> <br>
+
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male">
+        </div>
+
+        <div>
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="male" value="female">
+        </div>
+
+      </div>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <div>
+        <h2><strong>7. What is your Date of Birth (D.O.B)? </strong></h2>
+
+        <div>
+          <label for="birthday">Your DOB is: </label>
+          <input name="birthday" type="date" id="birthday">
+        </div>
+
+      </div>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <div>
+        <h2><strong>8. Were you born in Australia? </strong></h2>
+
+        <div>
+          <label for="no">No</label>
+          <input name="boolean" type="radio" id="no" value="no">
+        </div>
+
+        <br>
+
+        <div>
+          <label for="yes">Yes</label>
+          <input name="boolean" type="radio" id="yes" value="yes">
+        </div> <br>
+
+        <h3>If no, then: </h3>
+        <div>
+          <label for="reason">Which country were you born in? </label>
+          <input type="text" name="reason" id="reason" maxlength="20" placeholder="Country name">
+        </div>
+
+        <br>
+
+        <div>
+          <label for="arrive">What date did you arrive in Australia? </label>
+          <input type="date" name="arrive" id="arrive">
+        </div>
+
+      </div>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <div>
+        <h2 style="font-size: 40px; font-style: italic; color: red; text-decoration: underline;"><strong>Section B:
+            Address Details</strong></h3>
+
+          <br>
+
+          <h4 style="list-style-type: circle; color: red;">We may use these details to send notices and correspondence
+            about your taxation affairs. </h4>
+
+          <h2><strong>9. What is your postal address in Australia? </strong></h2> <br>
+
+          <div>
+            <label for="suburb">Suburb/ Town/ Locality: </label>
+            <input type="text" name="suburb" id="suburb" maxlength="27" required>
+          </div>
+
+          <br>
+
+          <div>
+            <label for="state">State/ Territory (maximum three letters, e.g. NSW): </label>
+            <input type="text" name="state" id="state" size="1" maxlength="4"
+              style="border: 1px solid red; border-radius: 5px" required>
+            <input type="text" name="state" id="state" size="1" maxlength="4"
+              style="border: 1px solid red; border-radius: 5px" required>
+            <input type="text" name="state" id="state" size="1" maxlength="4"
+              style="border: 1px solid red; border-radius: 5px" required>
+
+          </div>
+
+          <br>
+
+          <div>
+            <label for="postcode">Postcode: (maximum four letters, e.g. 2762): </label>
+            <input type="text" name="postcode" id="postcode" maxlength="4"
+              style="border: 1px solid red; border-radius: 5px" required>
+            <input type="text" name="postcode" id="postcode" maxlength="4"
+              style="border: 1px solid red; border-radius: 5px" required>
+            <input type="text" name="postcode" id="postcode" maxlength="4"
+              style="border: 1px solid red; border-radius: 5px" required>
+            <input type="text" name="postcode" id="postcode" maxlength="4"
+              style="border: 1px solid red; border-radius: 5px" required>
+          </div>
+      </div>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <div>
+        <h2><strong>10. What is your home address? </strong></h2> <br>
+
+        <div>
+          <label for="suburb">Suburb/ Town/ Locality: </label>
+          <input type="text" name="suburb" id="suburb" maxlength="27" required>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="state">State/ Territory (maximum three letters, e.g. NSW): </label>
+          <input type="text" name="state" id="state" maxlength="3" style="border: 2px solid red; border-radius: 8px"
+            required>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="postcode">Postcode: (maximum four letter, e.g. 2762): </label>
+          <input type="text" name="postcode" id="postcode" maxlength="4"
+            style="border: 2px solid red; border-radius: 8px" required>
+        </div>
+
+      </div>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <div>
+        <h2 style="font-size: 40px; font-style: italic; color: red; text-decoration: underline;"><strong>Section C:
+            Residency Details</strong></h3>
+
+          <br>
+
+          <h4 style="color: red">The criteria we use to work out your residency status for tax purposes are not the same
+            as those used by other Australian agencies
+            for other purposes, such as immigration.</h4>
+
+          <br>
+
+          <h3><strong>11. Are you an Australian resident for tax purposes? </strong></h3>
+
+          <br>
+
+          <div>
+            <label for="no">No</label>
+            <input type="radio" name="yes_no" id="no" value="no">
+          </div>
+
+          <br>
+
+          <div>
+            <label for="yes">Yes</label>
+            <input type="radio" name="yes_no" id="yes" value="yes">
+          </div>
+
+      </div>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <div>
+        <h2 style="font-size: 40px; font-style: italic; color: red; text-decoration: underline;"><strong>Section D:
+            Contact Details</strong></h2>
+
+        <br>
+
+        <h2><strong>12. What are your contact details? </strong></h2>
+
+        <div>
+          <label for="urgent">Daytime phone number: </label>
+          <input type="text" name="urgent" id="urgent" maxlength="12" required>
+        </div>
+
+        <div>
+          <label for="phone">Mobile Number: </label>
+          <input type="text" name="phone" id="phone" maxlength="12" required>
+        </div>
+
+        <br>
+
+
+        <div>
+          <label for="email">Email Address: </label>
+          <input type="email" name="email" id="email" placeholder="Your email address" required>
+        </div>
+
+        <br>
+
+        <hr>
+        <br>
+
+        <h2><strong>13. Please provide an alternative contact person (OPTIONAL): </strong></h2>
+
+        <div>
+          <label for="full_name">Contact person's name: </label>
+          <input type="text" name="full_name" id="full_name" placeholder="Name">
+        </div>
+
+        <br>
+
+        <div>
+          <label for="urgent">Daytime phone number: </label>
+          <input type="text" name="urgent" id="urgent" maxlength="12" required>
+        </div>
+
+        <div>
+          <label for="phone">Mobile Number: </label>
+          <input type="phone" name="phone" id="phone" maxlength="12" required>
+        </div>
+
+        <br>
+
+
+        <div>
+          <label for="email">Email Address: </label>
+          <input type="email" name="email" id="email" placeholder="His/ her email address" required>
+        </div>
+
+        <br>
+
+        <hr>
+        <br>
+
+        <h2><strong>14. Please provide the details of your registered tax agent (OPTIONAL): </strong></h2> <br>
+        <p style="color: red; font-size: 15px">• IGNORE THIS IF YOU DO NOT HAVE A REGISTERED TAX AGENT</p>
+
+        <div>
+          <label for="agent_name">Name: </label>
+          <input type="text" name="agent_name" id="agent_name" placeholder="Agent name">
+        </div>
+
+        <br>
+
+        <div>
+          <label for="phone">Phone number: </label>
+          <input type="phone" name="phone" id="phone">
+        </div>
+
+        <div>
+          <label for="reg_num">Registered Number: </label>
+          <input type="text" name="reg_num" id="reg_num" maxlength="8">
+        </div>
+
+      </div>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+
+      <div>
+        <h2 style="color: red"><strong>Section E: Supporting Documents</strong></h2>
+
+        <h3>15. Are you: </h3>
+
+        <br>
+
+        <div>
+          <label for="age_opt1">Aged 16 or over </label>
+          <input type="radio" name="age" id="age_opt1" required>
+        </div>
+
+        <div>
+          <label for="age_opt2">Aged under 16 </label>
+          <input type="radio" name="age" id="age_opt2" required>
+        </div>
+
+        <br>
+
+        <hr>
+        <br>
+
+        <h3>16. Which of the following documents will you provide with your application? </h3>
+        <p style="color: red; font-size: 18px">NOTE: Select at least one primary document</p>
+
+        <div>
+          <h4 style="font-style: italic; font-weight: bold; color: red">Primary Documents: </h4>
+
+          <div>
+            <input type="checkbox" name="#checkbox" id="#checkbox">
+            <label for="#checkbox">Australian full birth certificate </label><br>
+          </div>
+
+          <div>
+            <input type="checkbox" name="#checkbox" id="#checkbox">
+            <label for="#checkbox">Australian Passport</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="#checkbox" id="#checkbox">
+            <label for="_checkbox">Australian Citizenship Certificate</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="#checkbox" id="#checkbox">
+            <label for="#checkbox">Foreigner passport</label> <br>
+            <!-- USE THIS SYNTAX FOR CHECK BOX AND RADIO BUTTONS-->
+          </div>
+
+          <style>
+            input[name="#checkbox"] {
+              width: 15px;
+              height: 30px;
+              align-items: center;
+              line-height: 3px;
+              margin-bottom: 20px;
+            }
+          </style>
+
+        </div>
+
+        <br>
+
+
+        <div>
+          <h4 style="font-style: italic; font-weight: bold; color: red">Secondary Documents: </h4>
+          <!-- ASK TEACHER IF SOME OF THE BELOW CHECKBOXES ARE NEEDED IN THIS SECTION -->
+
+          <div>
+            <label for="medicare">Medicare Card </label>
+            <input type="checkbox" name="medicare" id="medicare">
+          </div> <br>
+
+          <div>
+            <label for="account">Account statement from an Australian bank credit union or building society less than
+              one year old, with your name and
+              your current address matching the details you provide on your application (statements printed off the
+              internet and credit
+              card statements are not acceptable)</label>
+            <input type="checkbox" name="account" id="account">
+          </div> <br>
+
+          <div>
+            <label for="firearm">Current Australian firearm licence with your signature and/or photo matching the
+              details you provide on your application</label>
+            <input type="checkbox" name="firearm" id="firearm">
+          </div> <br>
+
+          <div>
+            <label for="student_id">Current student identification card (tertiary/ secondary)with your photo issued from
+              an Australian government accredited education authority</label>
+            <input type="checkbox" name="student_id" id="student_id">
+          </div> <br>
+
+          <div>
+            <input type="checkbox" name="list" id="list">
+            <label for="list">One of the following cards with your photo and signature: </label>
+            <ul type="square">
+              <!-- WHY THE HELL DOES THIS LIST ITEMS NOT WORK -->
+              <li>Australian driver's licence</li>
+              <li>Australian learner's permit</li>
+              <li>State or territory government issued proof of age card</li>
+              <li>State or territory government issued photo card</li>
+            </ul> <br>
+          </div>
+
+          <div>
+            <input type="checkbox" name="check" id="certif" size="8">
+            <label for="certif">Secondary examination certificate</label>
+          </div> <br>
+
+          <div>
+            <input type="checkbox" name="check" id="record" size="8">
+            <label for="record">Record of achievement</label>
+          </div> <br>
+
+          <div>
+            <input type="checkbox" name="check" id="exam_report" size="8">
+            <label for="exam_report">Examination report</label>
+          </div>
+
+        </div>
+
+        <br>
+
+        <hr>
+
+        <br>
+
+        <h2>17. Are you a parent or a guardian who is filling this form? </h2>
+
+        <div>
+          <input type="radio" name="no" id="no">
+          <label for="no">No </label>
+        </div>
+
+        <br>
+
+        <div>
+          <input type="radio" name="yes" id="yes">
+          <label for="yes">Yes </label>
+        </div>
+
+        <br>
+
+        <div>
+          <!-- MORE CHECKBOXES ACCORDING TO THE PDF -->
+        </div>
+
+      </div>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <div>
+        <h2>18. Are the supporting documents you will provide in English? </h2>
+
+        <br>
+
+        <div>
+          <input type="radio" name="no" id="yes">
+          <label for="no">No </label>
+        </div>
+
+        <br>
+
+        <div>
+          <input type="radio" name="yes" id="yes">
+          <label for="yes">Yes </label>
+        </div>
+
+      </div>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <div>
+        <h2>19. Attach a document confirming the SMSF is an ATO regulated super fund</h2>
+
+        <br>
+
+        <div>
+          <label for="doc">Attach the document from your file</label>
+          <input type="file" name="doc" id="doc">
+        </div>
+
+      </div>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <div>
+        <h3>20. Confirmation</h3>
+
+        <br>
+
+        <div>
+          <input type="checkbox" name="confirm" id="confirm" required>
+          <br>
+          <label for="confirm">I have attached the relevant information</label>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="date_detal">Date of submission</label>
+          <input type="date" name="date_detail" id="date_detail" required>
+        </div>
+
+      </div>
+
+      <br>
+
+
+      <div>
+        <button type="submit" id="print" name="print" size="10" onclick="window.print()">Print form</button>
+        <button type="submit" id="submit" name="submit" size="10">Submit form</button>
+        <button type="reset" id="reset" name="reset" size="10">Reset form</button>
+      </div>
+
+      <style>
+        #submit,
+        #print,
+        #reset {
+          border: 1.5px outset black;
+          border-radius: 8px;
+          background-color: white;
+          text-align: center;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 18px;
+          font-style: italic;
+          color: black;
+          padding: 5px;
+          height: 50px;
+          width: 120px;
+        }
+
+        #submit:hover,
+        #print:hover,
+        #reset:hover {
+          background-color: lightgrey;
+          cursor: pointer;
+        }
+
+        /* #reset{
+            border: 1.5px outset black;
+            border-radius: 8px;
+            background-color: white;
+            text-align: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            font-style: italic;
+            color: black;
+            padding-right: 8px;
+            height: 50px;
+            width: 120px;
+          }
+
+          #reset:hover{
+            background-color: grey;
+            cursor: pointer;
+          } */
+      </style>
+
+    </div>
+
+  </form>
+
+  <!-- Style of the global container -->
+
+<style>
+  .container {
+    background-color: rgba(232, 248, 2, 0.8);
+    border-radius: .25em;
+    box-shadow: 0 0 .50em rgba(0, 0, 0, .25);
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 30px;
+    left: 50%;
+    right: 50%;
+    height: 9000px;
+    padding: 20vmin;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,0%);
+  }
+</style>
+
+</body>
+
+</html>
